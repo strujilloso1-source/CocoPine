@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coco Pine Cassette | Product</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Unified Theme Colors */
+        body {
+            background-color: #000000;
+            color: #ffffff;
+        }
+
+        /* Navigation Styling - Synced with Home/Details */
+        .navbar {
+            border-bottom: 1px solid #d1325a;
+        }
+
+        .navbar-brand {
+            color: #d1325a !important;
+        }
+
+        /* Normal links stay light grey/white */
+        .navbar-dark .navbar-nav .nav-link {
+            color: rgba(255, 255, 255, 0.75) !important;
+        }
+
+        /* ONLY the active link (Product) turns pink */
+        .navbar-dark .navbar-nav .nav-link.active {
+            color: #d1325a !important;
+            font-weight: bold;
+        }
+
+        /* Hover effect for standard links */
+        .navbar-dark .navbar-nav .nav-link:hover {
+            color: #d1325a !important;
+        }
+
+        /* FIXED: Button Hover State to match Details Page exactly */
+        .btn-outline-light:hover {
+            color: #000 !important;
+            background-color: #ffffff !important;
+            border-color: #ffffff !important;
+        }
+
+        /* Hero background shapes */
+        .product-device {
+            position: absolute;
+            right: 10%;
+            bottom: -5%;
+            width: 300px;
+            height: 540px;
+            background-color: #d1325a;
+            border-radius: 21px;
+            transform: rotate(30deg);
+            z-index: 1;
+            opacity: 0.15;
+        }
+        .product-device-2 {
+            top: -25%;
+            right: auto;
+            left: 5%;
+            background-color: #d1325a;
+        }
+
+        .bg-body-tertiary {
+            background-color: #121212 !important;
+        }
+        
+        h1.display-3 {
+            color: #d1325a !important;
+        }
+        
+        .text-muted {
+            color: #bdc3c7 !important;
+        }
+
+        .flex-md-equal > * {
+            flex: 1;
+        }
+
+        /* PRODUCT BOX CONTAINERS */
+        .product-box-container {
+            position: relative;
+            width: 90%;
+            height: 450px;
+            margin: 0 auto;
+            border-radius: 21px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 15px 35px rgba(209, 50, 90, 0.2);
+            text-shadow: 0 2px 4px rgba(0,0,0,0.8);
+            border: 1px solid #333;
+        }
+
+        .layered-bg-img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-position: center;
+            z-index: 1;
+            filter: brightness(0.4);
+        }
+
+        .box-content {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            width: 100%;
+            padding: 20px;
+        }
+        
+        .box-content h2 {
+            color: #d1325a !important;
+        }
+
+        .layered-product-img {
+            max-width: 60%;
+            max-height: 200px;
+            object-fit: contain;
+            filter: drop-shadow(0 15px 25px rgba(0,0,0,0.6));
+            margin-top: 15px;
+            transition: transform 0.3s ease;
+        }
+
+        .product-box-container:hover .layered-product-img {
+            transform: scale(1.1) translateY(-5px);
+        }
+
+        .product-row {
+            margin-bottom: 3rem;
+        }
+
+        /* Button Styling */
+        .btn-dark {
+            background-color: #d1325a !important;
+            border-color: #d1325a !important;
+        }
+
+        .btn-outline-secondary {
+            color: #ffffff !important;
+            border-color: #d1325a !important;
+        }
+        
+        .btn-outline-secondary:hover {
+            background-color: #d1325a !important;
+            color: white !important;
+        }
+    </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="index.html">Coco Pine Cassette</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#productNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="productNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link active" aria-current="page" href="product.html">Product</a></li>
+        <li class="nav-item"><a class="nav-link" href="detail.html">Details</a></li>
+        <li class="nav-item"><a class="nav-link" href="checkout.html">Checkout</a></li>
+        <li class="nav-item">
+            <a class="nav-link btn btn-outline-light ms-lg-3 mt-2 mt-lg-0 px-3" href="login.html" style="border-color: #d1325a;">Login</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<main>
+  <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-body-tertiary">
+    <div class="col-md-6 p-lg-5 mx-auto my-5" style="position: relative; z-index: 10;">
+      <h1 class="display-3 fw-bold">Cassettes</h1>
+      <h3 class="fw-normal text-muted mb-3">The Songs You Love</h3>
+      <div class="d-flex gap-3 justify-content-center">
+        <a class="btn btn-dark px-4 py-2" href="detail.html">Explore Details</a>
+        <a class="btn btn-outline-secondary px-4 py-2" href="checkout.html">Buy Now</a>
+      </div>
+    </div>
+    <div class="product-device d-none d-md-block"></div>
+    <div class="product-device product-device-2 d-none d-md-block"></div>
+  </div>
+
+  <div class="d-md-flex flex-md-equal w-100 product-row ps-md-3">
+    <div class="me-md-3 overflow-hidden">
+      <div class="product-box-container">
+          <div class="layered-bg-img" style="background-image: url('Image1_insert.png');"></div>
+          <div class="box-content text-white">
+              <h2 class="display-5 fw-bold">HOLLOW KNIGHT</h2>
+              <p class="lead">Full Soundtrack just as it was in the game. </p>
+              <img src="ProductImage1.png" alt="Custom Art" class="layered-product-img">
+          </div>
+      </div>
+    </div>
+    <div class="me-md-3 overflow-hidden">
+      <div class="product-box-container">
+          <div class="layered-bg-img" style="background-image: url('image2_insert.png');"></div>
+          <div class="box-content text-white">
+              <h2 class="display-5 fw-bold">CRY By Cigarettes After Sex</h2>
+              <p class="lead">Full album with the songs you love</p>
+              <img src="ProductImage2.png" alt="Shell Colors" class="layered-product-img">
+          </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="d-md-flex flex-md-equal w-100 product-row ps-md-3">
+    <div class="me-md-3 overflow-hidden">
+      <div class="product-box-container">
+          <div class="layered-bg-img" style="background-image: url('image3_insert.png');"></div>
+          <div class="box-content text-white">
+              <h2 class="display-5 fw-bold">Berserk 1997 Soundtrack</h2>
+              <p class="lead">The Soundtrack From the Anime you Love</p>
+              <img src="ProductImage3.png" alt="Case Protection" class="layered-product-img">
+          </div>
+      </div>
+    </div>
+    <div class="me-md-3 overflow-hidden">
+      <div class="product-box-container">
+          <div class="layered-bg-img" style="background-image: url('image4_insert.png');"></div>
+          <div class="box-content text-white">
+              <h2 class="display-5 fw-bold">Good Kid M.A.A.D City</h2>
+              <p class="lead">The Album From Mr. Morale </p>
+              <img src="ProductImage4.png" alt="Mastering" class="layered-product-img">
+          </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer class="container py-5 border-top" style="border-top: 1px solid #333 !important;">
+  <div class="row">
+    <div class="col-12 col-md text-center">
+      <span class="fw-bold" style="color: #d1325a;">Coco Pine Cassette</span>
+      <small class="d-block mb-3 text-body-secondary">&copy; 2026</small>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

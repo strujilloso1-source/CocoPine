@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coco Pine Cassette | Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Base Theme */
+        body {
+            background-color: #000000;
+            color: #ffffff;
+        }
+
+        /* Navigation Styling */
+        .navbar {
+            border-bottom: 1px solid #d1325a;
+        }
+
+        .navbar-brand {
+            color: #d1325a !important;
+        }
+
+        /* Normal links stay light grey/white */
+        .navbar-dark .navbar-nav .nav-link {
+            color: rgba(255, 255, 255, 0.75) !important;
+        }
+
+        /* Only the 'active' link (Home) stays pink */
+        .navbar-dark .navbar-nav .nav-link.active {
+            color: #d1325a !important;
+            font-weight: bold;
+        }
+
+        /* Hover effect for standard links */
+        .navbar-dark .navbar-nav .nav-link:hover {
+            color: #d1325a !important;
+        }
+
+        /* FIXED: Button Hover State to match Details Page */
+        /* This creates the white box with dark text on hover */
+        .btn-outline-light:hover {
+            color: #000 !important;
+            background-color: #ffffff !important;
+            border-color: #ffffff !important;
+        }
+
+        /* Hero Section */
+        .hero-section {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+                        url('image1.png'); 
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            min-height: 600px; 
+            display: flex;
+            align-items: center;
+        }
+
+        .hero-section h1 {
+            color: #d1325a !important;
+            font-weight: 800;
+            text-shadow: 0 0 20px rgba(0, 0, 0, 1), 2px 2px 5px rgba(0, 0, 0, 0.8);
+        }
+
+        .hero-section p {
+            color: white !important;
+            text-shadow: 0 0 15px rgba(0, 0, 0, 1), 1px 1px 3px rgba(0, 0, 0, 0.8);
+        }
+
+        /* Features Section */
+        .feature-icon {
+            width: 7rem;
+            height: 7rem;
+            border-radius: 50%; 
+            border: 3px solid #d1325a;
+            background-color: #000;
+            overflow: hidden; 
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            transition: transform 0.3s ease;
+        }
+
+        .feature-icon:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 15px rgba(209, 50, 90, 0.4);
+        }
+
+        .feature-icon img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; 
+        }
+
+        .feature h3 {
+            margin-top: 15px;
+            font-weight: bold;
+            color: #d1325a;
+        }
+
+        /* Button Styling */
+        .btn-primary {
+            background-color: #d1325a !important;
+            border-color: #d1325a !important;
+            font-weight: bold;
+        }
+
+        .btn-primary:hover {
+            background-color: #b0264a !important;
+        }
+    </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="index.html">Coco Pine Cassette</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="product.html">Product</a></li>
+        <li class="nav-item"><a class="nav-link" href="detail.html">Details</a></li>
+        <li class="nav-item"><a class="nav-link" href="checkout.html">Checkout</a></li>
+        <li class="nav-item">
+          <a class="nav-link btn btn-outline-light ms-lg-3 mt-2 mt-lg-0 px-3" href="login.html" style="border-color: #d1325a;">Login</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<main>
+  <div class="hero-section p-5 mb-4 border-bottom">
+    <div class="container py-5 text-center">
+      <h1 class="display-3 fw-bolder">Welcome to Coco Pine Cassette</h1>
+      <p class="col-md-8 mx-auto fs-4">
+        Experience the Past & Present with our Cassette Tapes
+      </p>
+      <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mt-4">
+        <a href="product.html" class="btn btn-primary btn-lg px-4 gap-3">Explore Product</a>
+        <a href="detail.html" class="btn btn-outline-light btn-lg px-4">Customization Details</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="container px-4 py-5" id="featured-3">
+    <h2 class="pb-2 border-bottom text-center">Why Choose Coco Pine Cassette?</h2>
+    <div class="row g-4 py-5 row-cols-1 row-cols-lg-3 text-center">
+      
+      <div class="feature col">
+        <div class="feature-icon mb-3 shadow-sm">
+          <img src="icon1.png" alt="Customization">
+        </div>
+        <h3 class="fs-2">Uniquely Yours</h3>
+        <p>Built as You Imagined</p>
+      </div>
+
+      <div class="feature col">
+        <div class="feature-icon mb-3 shadow-sm">
+          <img src="icon2.png" alt="Variety">
+        </div>
+        <h3 class="fs-2">We Got What You Want</h3>
+        <p>From the Video Games you Love to The Anime you Adore</p>
+      </div>
+
+      <div class="feature col">
+        <div class="feature-icon mb-3 shadow-sm">
+          <img src="icon3.png" alt="Nostalgia">
+        </div>
+        <h3 class="fs-2">Nostalgia On Tape</h3>
+        <p>Timeless Music Built for Timeless Tech</p>
+      </div>
+
+    </div>
+  </div>
+</main>
+
+<footer class="container py-5 border-top">
+  <div class="row">
+    <div class="col-12 col-md text-center">
+      <span class="fw-bold" style="color: #d1325a;">Coco Pine Cassette</span>
+      <small class="d-block mb-3 text-body-secondary">&copy; 2026</small>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coco Pine Cassette | Cassette Tape Details</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Theme Colors */
+        body {
+            background-color: #000000;
+            color: #ffffff;
+        }
+        
+        /* Navbar Specificity Fix */
+        .navbar {
+            border-bottom: 1px solid #d1325a;
+        }
+
+        .navbar-brand {
+            color: #d1325a !important;
+        }
+
+        /* This ensures only the link with the 'active' class turns pink */
+        .navbar-dark .navbar-nav .nav-link.active {
+            color: #d1325a !important;
+            font-weight: bold;
+        }
+
+        .navbar-dark .navbar-nav .nav-link:hover {
+            color: #d1325a !important;
+        }
+
+        /* Card Styling */
+        .card {
+            background-color: #121212;
+            border: 1px solid #333;
+            transition: transform 0.2s ease-in-out;
+            color: white;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 0.5rem 1.5rem rgba(209, 50, 90, 0.3) !important;
+            border-color: #d1325a;
+        }
+
+        .card-img-container {
+            height: 200px;
+            background-color: #000;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            border-bottom: 2px solid #d1325a;
+        }
+
+        .card-img-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0.9;
+        }
+
+        h1.display-4, h5.fw-bold {
+            color: #d1325a !important;
+        }
+
+        .section-divider {
+            padding-top: 3rem;
+            margin-bottom: 2rem;
+            border-bottom: 2px solid #d1325a;
+            color: white;
+        }
+
+        footer {
+            background-color: #000 !important;
+            border-top: 1px solid #333 !important;
+        }
+        
+        footer p {
+            color: #d1325a;
+        }
+
+        .text-muted {
+            color: #bdc3c7 !important;
+        }
+    </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="index.html">Coco Pine Cassette</a>
+    
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavNav" aria-controls="navbarNavNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNavNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="product.html">Product</a></li>
+        <li class="nav-item"><a class="nav-link active" aria-current="page" href="detail.html">Details</a></li>
+        <li class="nav-item"><a class="nav-link" href="checkout.html">Checkout</a></li>
+        <li class="nav-item">
+          <a class="nav-link btn btn-outline-light ms-lg-3 mt-2 mt-lg-0 px-3" href="login.html" style="border-color: #d1325a;">Login</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<main class="container my-5">
+  <div class="text-center mb-5">
+    <h1 class="display-4 fw-bold">The Details Of Our Products</h1>
+    <p class="lead">Every Detail, Made From Your Vision</p>
+  </div>
+
+  <h3 class="section-divider pb-2">Custom Artwork</h3>
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+    <div class="col">
+      <div class="card h-100 shadow-sm">
+        <div class="card-img-container">
+          <img src="tape_hardware1.png" alt="Video Game Art">
+        </div>
+        <div class="card-body">
+          <h5 class="fw-bold">Video Game Cover Art</h5>
+          <p class="card-text text-muted">Get unique cover art from your favorite video games.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100 shadow-sm">
+        <div class="card-img-container">
+          <img src="tape_hardware2.png" alt="Anime Art">
+        </div>
+        <div class="card-body">
+          <h5 class="fw-bold">Anime Covers from Your Favorite Anime</h5>
+          <p class="card-text text-muted">Never before seen anime art for your cassette cover.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100 shadow-sm">
+        <div class="card-img-container">
+          <img src="tape_hardware3.png" alt="Hand Drawn">
+        </div>
+        <div class="card-body">
+          <h5 class="fw-bold">Hand Drawn Art</h5>
+          <p class="card-text text-muted">Get custom hand drawn art of your favorite characters.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <h3 class="section-divider pb-2">Tape Customization</h3>
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+    <div class="col">
+      <div class="card h-100 shadow-sm">
+        <div class="card-img-container">
+          <img src="audio_content1.png" alt="Shell Colors">
+        </div>
+        <div class="card-body">
+          <h5 class="fw-bold">Shell Colors</h5>
+          <p class="card-text text-muted">Choose from various housing tints to match your aesthetic.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100 shadow-sm">
+        <div class="card-img-container">
+          <img src="audio_content2.png" alt="Labels">
+        </div>
+        <div class="card-body">
+          <h5 class="fw-bold">Custom Labels</h5>
+          <p class="card-text text-muted">High-quality adhesive labels with tracklists and custom icons.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100 shadow-sm">
+        <div class="card-img-container">
+          <img src="audio_content3.png" alt="Packaging">
+        </div>
+        <div class="card-body">
+          <h5 class="fw-bold">Premium Cases</h5>
+          <p class="card-text text-muted">Classic High Quality Custom Cases to protect Your Art & Tape for decades.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer class="py-5 text-center border-top mt-5">
+  <p class="fw-bold">&copy; 2026 Coco Pine Cassette</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

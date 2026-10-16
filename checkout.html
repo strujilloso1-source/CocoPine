@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coco Pine Cassette | Checkout</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Base Theme */
+        body {
+            background-color: #000000;
+            color: #ffffff;
+        }
+
+        .container { max-width: 960px; }
+
+        /* Navigation Styling - Synced */
+        .navbar {
+            border-bottom: 1px solid #d1325a;
+        }
+
+        .navbar-brand {
+            color: #d1325a !important;
+        }
+
+        .navbar-dark .navbar-nav .nav-link {
+            color: rgba(255, 255, 255, 0.75) !important;
+        }
+
+        .navbar-dark .navbar-nav .nav-link.active {
+            color: #d1325a !important;
+            font-weight: bold;
+        }
+
+        .navbar-dark .navbar-nav .nav-link:hover {
+            color: #d1325a !important;
+        }
+
+        .btn-outline-light:hover {
+            color: #000 !important;
+            background-color: #ffffff !important;
+            border-color: #ffffff !important;
+        }
+
+        /* Form and Card Styling */
+        .list-group-item {
+            background-color: #121212;
+            color: white;
+            border: 1px solid #333;
+        }
+
+        .card {
+            background-color: #121212;
+            border: 1px solid #333;
+        }
+
+        .form-control, .form-select {
+            background-color: #121212;
+            border: 1px solid #333;
+            color: white;
+        }
+
+        .form-control:focus, .form-select:focus {
+            background-color: #1a1a1a;
+            border-color: #d1325a;
+            color: white;
+            box-shadow: 0 0 0 0.25rem rgba(209, 50, 90, 0.25);
+        }
+
+        label {
+            color: #bdc3c7;
+        }
+
+        h2, h4 {
+            color: #d1325a;
+        }
+
+        /* Button Styling */
+        .btn-primary {
+            background-color: #d1325a;
+            border-color: #d1325a;
+            font-weight: bold;
+        }
+
+        .btn-primary:hover {
+            background-color: #b0264a;
+            border-color: #b0264a;
+        }
+
+        .btn-secondary {
+            background-color: #333;
+            border-color: #444;
+        }
+
+        .text-success {
+            color: #d1325a !important; /* Themed promo text */
+        }
+
+        footer {
+            border-top: 1px solid #333;
+        }
+    </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="index.html">Coco Pine Cassette</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="product.html">Product</a></li>
+        <li class="nav-item"><a class="nav-link" href="detail.html">Details</a></li>
+        <li class="nav-item"><a class="nav-link active" aria-current="page" href="checkout.html">Checkout</a></li>
+        <li class="nav-item">
+            <a class="nav-link btn btn-outline-light ms-lg-3 mt-2 mt-lg-0 px-3" href="login.html" style="border-color: #d1325a;">Login</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container">
+  <main>
+    <div class="py-5 text-center">
+      <h2 class="fw-bold">Complete Your Order</h2>
+      <p class="lead text-secondary">Finalize your purchase and get your hand-curated cassettes delivered to your door.</p>
+    </div>
+
+    <div class="row g-5">
+      <div class="col-md-5 col-lg-4 order-md-last">
+        <h4 class="d-flex justify-content-between align-items-center mb-3">
+          <span style="color: white;">Your cart</span>
+          <span class="badge rounded-pill" style="background-color: #d1325a;">1</span>
+        </h4>
+        <ul class="list-group mb-3">
+          <li class="list-group-item d-flex justify-content-between lh-sm">
+            <div>
+              <h6 class="my-0">Berserk Cassette</h6>
+              <small class="text-secondary">Hand-Drawn Artwork Edition</small>
+            </div>
+            <span class="text-secondary">$12.00</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between bg-dark">
+            <div class="text-success">
+              <h6 class="my-0">Promo code</h6>
+              <small>NEWUSER2026</small>
+            </div>
+            <span class="text-success">−$3.00</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between">
+            <span>Total (USD)</span>
+            <strong style="color: #d1325a;">$9.00</strong>
+          </li>
+        </ul>
+
+        <form class="card p-2">
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="Promo code">
+            <button type="submit" class="btn btn-secondary text-white">Redeem</button>
+          </div>
+        </form>
+      </div>
+
+      <div class="col-md-7 col-lg-8">
+        <h4 class="mb-3">Shipping Address</h4>
+        <form class="needs-validation" novalidate>
+          <div class="row g-3">
+            <div class="col-sm-6">
+              <label for="firstName" class="form-label">First name</label>
+              <input type="text" class="form-control" id="firstName" required>
+            </div>
+
+            <div class="col-sm-6">
+              <label for="lastName" class="form-label">Last name</label>
+              <input type="text" class="form-control" id="lastName" required>
+            </div>
+
+            <div class="col-12">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email" placeholder="you@example.com" required>
+            </div>
+
+            <div class="col-12">
+              <label for="address" class="form-label">Address</label>
+              <input type="text" class="form-control" id="address" placeholder="1234 Main St" required>
+            </div>
+
+            <div class="col-md-5">
+              <label for="city" class="form-label">City</label>
+              <input type="text" class="form-control" id="city" required>
+            </div>
+
+            <div class="col-md-4">
+              <label for="state" class="form-label">State</label>
+              <select class="form-select" id="state" required>
+                <option value="">Choose...</option>
+                <option>California</option>
+                <option>Texas</option>
+                <option>New York</option>
+              </select>
+            </div>
+
+            <div class="col-md-3">
+              <label for="zip" class="form-label">Zip</label>
+              <input type="text" class="form-control" id="zip" required>
+            </div>
+          </div>
+
+          <hr class="my-4" style="border-color: #333;">
+
+          <h4 class="mb-3">Payment</h4>
+          <div class="my-3">
+            <div class="form-check">
+              <input id="credit" name="paymentMethod" type="radio" class="form-check-input" checked required>
+              <label class="form-check-label" for="credit">Credit card</label>
+            </div>
+            <div class="form-check">
+              <input id="debit" name="paymentMethod" type="radio" class="form-check-input" required>
+              <label class="form-check-label" for="debit">Debit card</label>
+            </div>
+          </div>
+
+          <div class="row gy-3">
+            <div class="col-md-6">
+              <label for="cc-name" class="form-label">Name on card</label>
+              <input type="text" class="form-control" id="cc-name" required>
+            </div>
+
+            <div class="col-md-6">
+              <label for="cc-number" class="form-label">Credit card number</label>
+              <input type="text" class="form-control" id="cc-number" required>
+            </div>
+          </div>
+
+          <hr class="my-4" style="border-color: #333;">
+
+          <button class="w-100 btn btn-primary btn-lg" type="submit">Place My Order</button>
+        </form>
+      </div>
+    </div>
+  </main>
+</div>
+
+<footer class="my-5 pt-5 text-center text-small">
+  <p class="mb-1" style="color: #d1325a;">&copy; 2026 Coco Pine Cassette</p>
+  <ul class="list-inline">
+    <li class="list-inline-item"><a href="#" class="text-decoration-none text-secondary">Privacy</a></li>
+    <li class="list-inline-item"><a href="#" class="text-decoration-none text-secondary">Terms</a></li>
+    <li class="list-inline-item"><a href="#" class="text-decoration-none text-secondary">Support</a></li>
+  </ul>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
